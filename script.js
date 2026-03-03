@@ -10,7 +10,7 @@ const mantras = [
   { name: "Ganesh stotram", file: "https://elhgzffxdadlyiplxwnk.supabase.co/storage/v1/object/public/mantras-divine/gayatri_mantra.mp3" },
   { name: "Ganesh pancharatnam", file: "https://elhgzffxdadlyiplxwnk.supabase.co/storage/v1/object/public/mantras-divine/ganesha_pancharatnam.mp3" },
   { name: "vishnu_sahasranamam", file: "https://elhgzffxdadlyiplxwnk.supabase.co/storage/v1/object/public/mantras-divine/vishnu_sahasranamam.mp3" },
-  { name: "venkateswara_suprabhatham", file: "https://elhgzffxdadlyiplxwnk.supabase.co/storage/v1/object/public/mantras-divine/suprabhatham.mp3" },
+  { name: "venkateswara_suprabhatham", file: "https://elhgzffxdadlyiplxwnk.supabase.co/storage/v1/object/public/mantras-divine/suprabhatham_.mp3" },
   { name: "Guruvayoor Ekadashi", file: "https://elhgzffxdadlyiplxwnk.supabase.co/storage/v1/object/public/mantras-divine/guruvayoor.mp3" },
   { name: "ashtalakshmi", file: "https://elhgzffxdadlyiplxwnk.supabase.co/storage/v1/object/public/mantras-divine/ashtalakshmi_stotram.mp3" },
   { name: "lalitha sahasranamam", file: "https://elhgzffxdadlyiplxwnk.supabase.co/storage/v1/object/public/mantras-divine/lalitha_sahasranamam.mp3" },
