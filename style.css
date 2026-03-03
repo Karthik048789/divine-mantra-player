@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: radial-gradient(circle at top, #3a0ca3, #000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+}
+
+/* Animated Spiritual Glow */
+.background-glow {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(114,9,183,0.6), transparent 70%);
+  animation: pulse 6s infinite alternate ease-in-out;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+@keyframes pulse {
+  from { transform: scale(0.8); opacity: 0.7; }
+  to { transform: scale(1.2); opacity: 0.3; }
+}
+
+/* Main Card */
+.app {
+  position: relative;
+  z-index: 1;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  border-radius: 25px;
+  width: 90%;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(0,0,0,0.6);
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.now-playing {
+  font-size: 14px;
+  margin-bottom: 25px;
+  opacity: 0.9;
+}
+
+#currentMantra {
+  font-weight: bold;
+  color: #4cc9f0;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.start {
+  background: #4cc9f0;
+}
+
+.stop {
+  background: #e63946;
+  color: white;
+}
+
+.btn:hover {
+  transform: scale(1.08);
+  opacity: 0.85;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .app {
+    padding: 25px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+  .time {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+.prev { background: #4361ee; }
+.next { background: #3a86ff; }
+.reset { background: #ff9f1c; }
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 12px;
+  border-radius: 18px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  transition: 0.3s;
+  font-size: 14px;
+}
+@media (max-width: 480px) {
+  .buttons {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+}

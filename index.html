@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Divine Mantra Loop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="background-glow"></div>
+
+  <div class="app">
+    <h1 class="title">🕉 Divine Mantra Loop</h1>
+
+    <select id="mantraSelect">
+        <option value="https://elhgzffxdadlyiplxwnk.supabase.co/storage/v1/object/public/mantras-divine/gayatri_mantra.mp3">Ganesh stotram</option>
+        <option value="https://elhgzffxdadlyiplxwnk.supabase.co/storage/v1/object/public/mantras-divine/ganesha_pancharatnam.mp3">Ganesh pancharatnam</option>
+        <option value="https://elhgzffxdadlyiplxwnk.supabase.co/storage/v1/object/public/mantras-divine/vishnu_sahasranamam.mp3">vishnu_sahasranamam</option>
+        <option value="https://elhgzffxdadlyiplxwnk.supabase.co/storage/v1/object/public/mantras-divine/suprabhatham.mp3">venkateswara_suprabhatham</option>
+        <option value="https://elhgzffxdadlyiplxwnk.supabase.co/storage/v1/object/public/mantras-divine/guruvayoor.mp3">Guruvayoor Ekadashi</option>
+        <option value="https://elhgzffxdadlyiplxwnk.supabase.co/storage/v1/object/public/mantras-divine/ashtalakshmi_stotram.mp3">ashtalakshmi</option>
+        <option value="https://elhgzffxdadlyiplxwnk.supabase.co/storage/v1/object/public/mantras-divine/lalitha_sahasranamam.mp3">lalitha sahasranamam</option>
+        <option value="https://elhgzffxdadlyiplxwnk.supabase.co/storage/v1/object/public/mantras-divine/karagre.mp3">Karagre vasate </option>
+        <option value="https://elhgzffxdadlyiplxwnk.supabase.co/storage/v1/object/public/mantras-divine/kuber.mp3">kuber_ashtalakshmi</option> 
+        <option value="https://elhgzffxdadlyiplxwnk.supabase.co/storage/v1/object/public/mantras-divine/knnnnttccirunn_bhgvaani.mp3">dhanwantari</option> 
+        <option value="https://elhgzffxdadlyiplxwnk.supabase.co/storage/v1/object/public/mantras-divine/maha_mrityunjaya.mp3">mrityunjaya_mantra</option>
+        <option value="https://elhgzffxdadlyiplxwnk.supabase.co/storage/v1/object/public/mantras-divine/sai.mp3">sai_mantra</option>
+        <option value="https://elhgzffxdadlyiplxwnk.supabase.co/storage/v1/object/public/mantras-divine/bhdrkaalli.mp3">Bhadrakali</option>
+        <option value="https://elhgzffxdadlyiplxwnk.supabase.co/storage/v1/object/public/mantras-divine/mookabika.mp3">mookabika_ashtakam</option>
+        <option value="https://elhgzffxdadlyiplxwnk.supabase.co/storage/v1/object/public/mantras-divine/hanuman_chalisa.mp3">Hanuman chalisa</option>
+        <option value="https://elhgzffxdadlyiplxwnk.supabase.co/storage/v1/object/public/mantras-divine/harivarasanam.mp3">Harivarasanam</option>
+    </select>
+   
+
+    <p class="now-playing">
+      Now Playing:
+      <span id="currentMantra">None</span>
+    </p>
+    <p class="time">
+        <span id="currentTime">00:00</span> /
+        <span id="totalTime">00:00</span>
+    </p>
+   
+    <div class="buttons">
+  <button class="btn prev" onclick="previousSong()">⏮ Prev</button>
+  <button class="btn start" onclick="startChant()">Start</button>
+  <button class="btn stop" onclick="stopChant()">Stop</button>
+  <button class="btn next" onclick="nextSong()">Next ⏭</button>
+  <button class="btn reset" onclick="resetPlaylist()">Reset 🔄</button>
+</div>
+  </div>
+
+  <audio id="audioPlayer" ></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
